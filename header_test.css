@@ -1,0 +1,54 @@
+/* Set defaults for the webpage */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* General properties for div elements, including height*/
+div {
+  display: inline-block;
+  height: 400px;
+}
+
+/* We want width to map across the entire screen */
+#header {
+  width: 100%;
+}
+
+/* Specify the photo, and how much space to take up (width: 25%). */
+#profile_photo {
+  background-image: url("img/test_profile.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  border-right: 5px solid black;
+}
+
+/* Specify a background image, along with a gradient to sit on top of the image.*/
+/* The two width's should equal 100% */
+#header_background {
+  background: linear-gradient(
+    rgba(0, 0, 255, 0.45),
+    rgba(0, 0, 255, 0.45)
+  ), url("img/test_background.jpg");
+  width: 75%;
+  background-size: cover;
+  border-left: 5px solid black;
+}
+
+/* Code for drawing the text on the header background image. */
+#header_background h1 {
+  position: absolute;
+  margin: 250px;
+  color: white;
+}
+
+#header_background p {
+  position: absolute;
+  margin: 300px 250px;
+  color: white;
+}
